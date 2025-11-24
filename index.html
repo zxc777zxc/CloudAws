@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Подготовка к cloud</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📚 Подготовка к cloud</h1>
+            <p class="subtitle">Выберите тест для прохождения</p>
+        </header>
+
+        <div id="testsSection">
+            <div class="tests-grid" id="testsGrid">
+                <!-- Тесты будут добавлены через JavaScript -->
+            </div>
+        </div>
+
+        <div class="test-container" id="testContainer" style="display: none;">
+            <div class="test-header">
+                <button class="back-btn" id="backBtn">← Назад к тестам</button>
+                <h2 id="testTitle">Тест 1</h2>
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progressFill"></div>
+                </div>
+                <p class="progress-text" id="progressText">Вопрос 1 из 10</p>
+            </div>
+
+            <div class="question-container" id="questionContainer">
+                <!-- Вопросы будут добавлены через JavaScript -->
+            </div>
+
+            <div class="test-results" id="testResults" style="display: none;">
+                <h3>Результаты теста</h3>
+                <div class="score" id="score"></div>
+                <button class="restart-btn" id="restartBtn">Пройти заново</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
